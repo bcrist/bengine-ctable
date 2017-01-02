@@ -42,7 +42,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
   <ItemGroup>
-    <ClCompile Include="test\ct_border_config.cpp" />
+    <ClCompile Include="test\test_ct_border_config.cpp" />
     <ClCompile Include="test\test_main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
