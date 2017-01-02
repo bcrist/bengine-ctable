@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\config">
+      <UniqueIdentifier>{0d48b324-bf30-4a84-8aeb-1cd4d4ecb4b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rendering">
+      <UniqueIdentifier>{42c4192f-d329-48fb-ba33-7a398a1b2dea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\config">
+      <UniqueIdentifier>{f9ed7f3a-4896-47b7-bbe8-9a87c09ac05e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderering">
+      <UniqueIdentifier>{f4223783-68e7-428a-b8fc-cc40963fbf33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\pch.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctable.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ctable_autolink.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cell.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\row.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\table.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vseq_renderer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base_renderer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\border_renderer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cell_renderer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\empty_renderer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\padded_renderer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\row_renderer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\table_renderer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\text_renderer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\border_config.hpp">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\box_config.hpp">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cell_config.hpp">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\row_config.hpp">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\table_config.hpp">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\column_sizer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hseq_renderer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\row_sizer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\table_sizer.hpp">
+      <Filter>Header Files\rendering</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\box_config.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cell_renderer.cpp">
+      <Filter>Source Files\renderering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\column_sizer.cpp">
+      <Filter>Source Files\renderering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\row_renderer.cpp">
+      <Filter>Source Files\renderering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\row_sizer.cpp">
+      <Filter>Source Files\renderering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\table_renderer.cpp">
+      <Filter>Source Files\renderering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\table_sizer.cpp">
+      <Filter>Source Files\renderering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\row.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\text_renderer.cpp">
+      <Filter>Source Files\renderering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\border_config.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

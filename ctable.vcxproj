@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>ctable</ProjectName>
+    <RootNamespace>ctable</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectGuid>{652D9B81-E3F7-498C-B056-F0D4A02213A6}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Import Project="$(SolutionDir)msvc_common.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Import Project="$(SolutionDir)msvc_common.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>BE_CTABLE_IMPL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>BE_CTABLE_IMPL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ctable.hpp" />
+    <ClInclude Include="include\ctable_autolink.hpp" />
+    <ClInclude Include="include\base_renderer.hpp" />
+    <ClInclude Include="include\border_config.hpp" />
+    <ClInclude Include="include\border_renderer.hpp" />
+    <ClInclude Include="include\box_config.hpp" />
+    <ClInclude Include="include\cell.hpp" />
+    <ClInclude Include="include\cell_config.hpp" />
+    <ClInclude Include="include\cell_renderer.hpp" />
+    <ClInclude Include="include\column_sizer.hpp" />
+    <ClInclude Include="include\empty_renderer.hpp" />
+    <ClInclude Include="include\hseq_renderer.hpp" />
+    <ClInclude Include="include\padded_renderer.hpp" />
+    <ClInclude Include="include\row.hpp" />
+    <ClInclude Include="include\row_config.hpp" />
+    <ClInclude Include="include\row_renderer.hpp" />
+    <ClInclude Include="include\row_sizer.hpp" />
+    <ClInclude Include="include\table.hpp" />
+    <ClInclude Include="include\table_config.hpp" />
+    <ClInclude Include="include\table_renderer.hpp" />
+    <ClInclude Include="include\table_sizer.hpp" />
+    <ClInclude Include="include\text_renderer.hpp" />
+    <ClInclude Include="include\vseq_renderer.hpp" />
+    <ClInclude Include="include\pch.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\border_config.cpp" />
+    <ClCompile Include="src\box_config.cpp" />
+    <ClCompile Include="src\cell.cpp" />
+    <ClCompile Include="src\cell_renderer.cpp" />
+    <ClCompile Include="src\column_sizer.cpp" />
+    <ClCompile Include="src\row.cpp" />
+    <ClCompile Include="src\row_renderer.cpp" />
+    <ClCompile Include="src\row_sizer.cpp" />
+    <ClCompile Include="src\table.cpp" />
+    <ClCompile Include="src\table_renderer.cpp" />
+    <ClCompile Include="src\table_sizer.cpp" />
+    <ClCompile Include="src\text_renderer.cpp" />
+    <ClCompile Include="src\pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
