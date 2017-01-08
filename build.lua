@@ -1,24 +1,14 @@
-module { name = 'ctable',
-   projects = {
-      lib {
-         src = {
-            'src/*.cpp',
-            pch = 'src/pch.cpp'
-         },
-         preprocessor = {
-            'BE_CTABLE_IMPL'
-         }
-      },
-      app { suffix = 'test',
-         icon = 'icon/bengine-test-perf.ico',
-         src = {
-            'test/*.cpp'
-         },
-         libs = {
-            'testing',
-            'core',
-            'core-id'
-         }
+module 'ctable' {
+   lib {
+      pch_src 'src/pch.cpp',
+      define 'BE_CTABLE_IMPL'
+   },
+   app '-test' {
+      icon 'icon/bengine-test-perf.ico',
+      link_project {
+         'testing',
+         'core',
+         'core-id'
       }
    }
 }
