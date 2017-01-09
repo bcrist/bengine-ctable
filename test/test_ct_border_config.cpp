@@ -1,7 +1,7 @@
 #ifdef BE_TEST
 
 #include "border_config.hpp"
-#include <catch.hpp>
+#include <catch/catch.hpp>
 
 #define BE_CATCH_TAGS "[ct][ct:BorderConfig]"
 
