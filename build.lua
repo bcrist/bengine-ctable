@@ -1,6 +1,9 @@
 module 'ctable' {
    lib {
-      pch_src 'src/pch.cpp',
+      src {
+         'src/*.cpp',
+         pch_src 'src/pch.cpp'
+      },
       define 'BE_CTABLE_IMPL',
       link_project {
          'core', 'util'
