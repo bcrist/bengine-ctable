@@ -76,6 +76,7 @@
     <ClInclude Include="include\table_renderer.hpp" />
     <ClInclude Include="include\table_sizer.hpp" />
     <ClInclude Include="include\text_renderer.hpp" />
+    <ClInclude Include="include\version.hpp" />
     <ClInclude Include="include\vseq_renderer.hpp" />
     <ClInclude Include="include\pch.hpp" />
   </ItemGroup>

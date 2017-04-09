@@ -10,5 +10,6 @@
     <ClCompile Include="test\test_ct_border_config.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
+    <ClCompile Include="test\version.cpp" />
   </ItemGroup>
 </Project>

@@ -44,6 +44,7 @@
   <ItemGroup>
     <ClCompile Include="test\test_ct_border_config.cpp" />
     <ClCompile Include="test\test_main.cpp" />
+    <ClCompile Include="test\version.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
