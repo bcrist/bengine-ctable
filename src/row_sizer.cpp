@@ -2,8 +2,7 @@
 #include "row_sizer.hpp"
 #include <be/core/alg.hpp>
 
-namespace be {
-namespace ct {
+namespace be::ct {
 namespace detail {
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -81,4 +80,3 @@ void RowSizer::set_heights() {
 
 } // be::ct::detail
 } // be::ct
-} // be

@@ -1,8 +1,7 @@
 #include "pch.hpp"
 #include "box_config.hpp"
 
-namespace be {
-namespace ct {
+namespace be::ct {
 
 ///////////////////////////////////////////////////////////////////////////////
 void set_border(BoxConfig& config, const BorderConfig& all) {
@@ -165,4 +164,3 @@ void set_border_pattern(BoxConfig& config, const char* top, const char* right, c
 }
 
 } // be::ct
-} // be

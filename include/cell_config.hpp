@@ -5,8 +5,7 @@
 #include "box_config.hpp"
 #include <be/core/console.hpp>
 
-namespace be {
-namespace ct {
+namespace be::ct {
 
 ///////////////////////////////////////////////////////////////////////////////
 struct CellConfig {
@@ -20,6 +19,5 @@ struct CellConfig {
 };
 
 } // be::ct
-} // be
 
 #endif

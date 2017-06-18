@@ -23,8 +23,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\pch.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\pch.hpp">
+      <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="include\ctable.hpp">
       <Filter>Header Files</Filter>

@@ -6,8 +6,7 @@
 #include <be/core/console.hpp>
 #include <array>
 
-namespace be {
-namespace ct {
+namespace be::ct {
 
 ///////////////////////////////////////////////////////////////////////////////
 struct BoxConfig {
@@ -65,7 +64,6 @@ void set_border_pattern(BoxConfig& config, const char* top, const char* left_rig
 void set_border_pattern(BoxConfig& config, const char* top, const char* right, const char* bottom, const char* left);
 
 } // be::ct
-} // be
 
 #endif
 

@@ -3,8 +3,7 @@
 #include "table_sizer.hpp"
 #include <memory>
 
-namespace be {
-namespace ct {
+namespace be::ct {
 namespace detail {
 namespace {
 
@@ -213,4 +212,3 @@ void TableRenderer::resolve_border_colors_(BoxConfig::side side) {
 
 } // be::ct::detail
 } // be::ct
-} // be

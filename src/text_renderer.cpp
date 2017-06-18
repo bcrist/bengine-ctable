@@ -2,8 +2,7 @@
 #include "text_renderer.hpp"
 #include <numeric>
 
-namespace be {
-namespace ct {
+namespace be::ct {
 namespace detail {
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -252,4 +251,3 @@ void TextRenderer::render_line_(std::ostream& os, I32 index) {
 
 } // be::ct::detail
 } // be::ct
-} // be

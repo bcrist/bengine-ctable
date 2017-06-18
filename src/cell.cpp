@@ -2,8 +2,7 @@
 #include "cell.hpp"
 #include "cell_renderer.hpp"
 
-namespace be {
-namespace ct {
+namespace be::ct {
 
 ///////////////////////////////////////////////////////////////////////////////
 Cell::Cell()
@@ -239,4 +238,3 @@ std::ostream& operator<<(std::ostream& os, const Cell& cell) {
 }
 
 } // be::ct
-} // be

@@ -7,8 +7,7 @@
 #include <be/core/console_color.hpp>
 #include <vector>
 
-namespace be {
-namespace ct {
+namespace be::ct {
 namespace detail {
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -67,7 +66,6 @@ private:
 
 } // be::ct::detail
 } // be::ct
-} // be
 
 #endif
 

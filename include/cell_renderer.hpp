@@ -6,8 +6,7 @@
 #include "border_renderer.hpp"
 #include "padded_renderer.hpp"
 
-namespace be {
-namespace ct {
+namespace be::ct {
 namespace detail {
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -45,6 +44,5 @@ private:
 
 } // be::ct::detail
 } // be::ct
-} // be
 
 #endif

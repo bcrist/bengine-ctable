@@ -10,8 +10,7 @@
 #include <algorithm>
 #include <limits>
 
-namespace be {
-namespace ct {
+namespace be::ct {
 namespace detail {
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -109,7 +108,6 @@ private:
 
 } // be::ct::detail
 } // be::ct
-} // be
 
 #endif
 

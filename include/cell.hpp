@@ -5,8 +5,7 @@
 #include "cell_config.hpp"
 #include <be/core/be.hpp>
 
-namespace be {
-namespace ct {
+namespace be::ct {
 namespace detail {
 
 class TextRenderer;
@@ -97,6 +96,5 @@ Cell operator<<(Cell&& cell, const T& other) {
 std::ostream& operator<<(std::ostream& os, const Cell& cell);
 
 } // be::ct
-} // be
 
 #endif

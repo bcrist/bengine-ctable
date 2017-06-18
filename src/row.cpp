@@ -2,8 +2,7 @@
 #include "row.hpp"
 #include "row_renderer.hpp"
 
-namespace be {
-namespace ct {
+namespace be::ct {
 
 ///////////////////////////////////////////////////////////////////////////////
 Row::Row()
@@ -253,4 +252,3 @@ std::ostream& operator<<(std::ostream& os, const Row& row) {
 }
 
 } // be::ct
-} // be

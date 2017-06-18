@@ -6,8 +6,7 @@
 #include "hseq_renderer.hpp"
 #include "row.hpp"
 
-namespace be {
-namespace ct {
+namespace be::ct {
 namespace detail {
 
 class RowSizer;
@@ -56,7 +55,6 @@ private:
 
 } // be::ct::detail
 } // be::ct
-} // be
 
 #endif
 

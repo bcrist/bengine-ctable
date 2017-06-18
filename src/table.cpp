@@ -2,8 +2,7 @@
 #include "table.hpp"
 #include "table_renderer.hpp"
 
-namespace be {
-namespace ct {
+namespace be::ct {
 
 ///////////////////////////////////////////////////////////////////////////////
 Table::Table() { }
@@ -289,4 +288,3 @@ std::ostream& operator<<(std::ostream& os, const Table& table) {
 }
 
 } // be::ct
-} // be

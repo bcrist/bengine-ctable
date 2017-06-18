@@ -3,8 +3,7 @@
 #include <gsl/string_span>
 #include <numeric>
 
-namespace be {
-namespace ct {
+namespace be::ct {
 namespace {
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -231,4 +230,3 @@ std::vector<BorderChar> expand_border_pattern(const char* pattern, std::size_t w
 }
 
 } // be::ct
-} // be

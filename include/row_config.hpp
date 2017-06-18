@@ -4,8 +4,7 @@
 
 #include "cell_config.hpp"
 
-namespace be {
-namespace ct {
+namespace be::ct {
 
 ///////////////////////////////////////////////////////////////////////////////
 struct RowConfig {
@@ -15,6 +14,5 @@ struct RowConfig {
 };
 
 } // be::ct
-} // be
 
 #endif

@@ -5,8 +5,7 @@
 #include "table_config.hpp"
 #include "row.hpp"
 
-namespace be {
-namespace ct {
+namespace be::ct {
 
 ///////////////////////////////////////////////////////////////////////////////
 class Table final {
@@ -89,6 +88,5 @@ Table operator<<(Table&& table, const T& other) {
 std::ostream& operator<<(std::ostream& os, const Table& table);
 
 } // be::ct
-} // be
 
 #endif

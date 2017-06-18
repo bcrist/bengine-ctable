@@ -1,8 +1,7 @@
 #include "pch.hpp"
 #include "cell_renderer.hpp"
 
-namespace be {
-namespace ct {
+namespace be::ct {
 namespace detail {
 namespace {
 
@@ -177,4 +176,3 @@ void CellRenderer::resolve_border_colors_(BoxConfig::side side) {
 
 } // be::ct::detail
 } // be::ct
-} // be

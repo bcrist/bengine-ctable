@@ -5,8 +5,7 @@
 #include "row_config.hpp"
 #include "cell.hpp"
 
-namespace be {
-namespace ct {
+namespace be::ct {
 
 class Table;
 
@@ -93,6 +92,5 @@ Row operator<<(Row&& row, const T& other) {
 std::ostream& operator<<(std::ostream& os, const Row& row);
 
 } // be::ct
-} // be
 
 #endif

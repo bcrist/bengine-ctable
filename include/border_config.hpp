@@ -6,8 +6,7 @@
 #include <be/core/console.hpp>
 #include <vector>
 
-namespace be {
-namespace ct {
+namespace be::ct {
 
 ///////////////////////////////////////////////////////////////////////////////
 struct BorderChar {
@@ -28,6 +27,5 @@ struct BorderConfig {
 std::vector<BorderChar> expand_border_pattern(const char* pattern, std::size_t width);
 
 } // be::ct
-} // be
 
 #endif

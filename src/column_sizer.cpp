@@ -2,8 +2,7 @@
 #include "column_sizer.hpp"
 #include <be/core/alg.hpp>
 
-namespace be {
-namespace ct {
+namespace be::ct {
 namespace detail {
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -111,4 +110,3 @@ I32 ColumnSizer::max_internal_width() const {
 
 } // be::ct::detail
 } // be::ct
-} // be

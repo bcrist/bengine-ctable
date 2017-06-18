@@ -3,8 +3,7 @@
 #include "row_sizer.hpp"
 #include <be/core/alg.hpp>
 
-namespace be {
-namespace ct {
+namespace be::ct {
 namespace detail {
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -175,4 +174,3 @@ void TableSizer::set_sizes(I32 max_row_width) {
 
 } // be::ct::detail
 } // be::ct
-} // be
