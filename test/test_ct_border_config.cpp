@@ -71,7 +71,7 @@ S toString(const std::vector<BorderChar>& vec) {
       }
    }
 
-   
+
    return oss.str();
 }
 

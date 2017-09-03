@@ -141,7 +141,7 @@ private:
       os << setcolor(fg_, bg_);
       auto initial_color = get_color(os);
       auto color = initial_color;
-         
+
       if (left_enabled_) {
          auto bc = vec.empty() ? BorderChar() : vec.front();
          render_rule_char_(os, bc, color, initial_color);

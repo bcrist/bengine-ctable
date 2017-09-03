@@ -45,7 +45,7 @@ public:
    bool empty() const;
 
    std::ostream& stream();
-   
+
    CellConfig& config();
    const CellConfig& config() const;
 

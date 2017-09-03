@@ -160,7 +160,7 @@ Cell& operator<<(Cell& cell, const Cell& other) {
       cell.bg_ = other.bg_;
       cell.stream_status_ = Cell::stream_status::dirty;
    }
-   
+
    return cell;
 }
 

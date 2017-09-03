@@ -119,7 +119,7 @@ std::vector<BorderChar> expand_border_pattern(const char* pattern, std::size_t w
    };
 
    std::vector<group> groups;
-   
+
    U8 nest_level = 0;
    bool escape = false;
    U8 hex_escape = 0;

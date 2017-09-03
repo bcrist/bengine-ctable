@@ -24,7 +24,7 @@ class TextRenderer final : public BaseRenderer<TextRenderer> {
    using line_type = std::vector<datum>;
    using vec_type = std::vector<line_type>;
 
-public:   
+public:
    TextRenderer(const Cell& cell);
 
    I32 min_width() const;

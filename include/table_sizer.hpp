@@ -14,7 +14,7 @@ class TableSizer final {
    using column_vec_type = std::vector<ColumnSizer>;
 public:
    TableSizer(std::size_t n_rows);
-   
+
    void add(RowRenderer& row);
 
    void set_sizes(I32 max_row_width);

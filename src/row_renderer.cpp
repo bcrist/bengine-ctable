@@ -164,7 +164,7 @@ void RowRenderer::generate_border_(BoxConfig::side side) {
       auto pattern = config_.sides[side].pattern;
       std::size_t size = 2 + (side == BoxConfig::top_side || side == BoxConfig::bottom_side ?
                               padding.width() : padding.height());
-      
+
       b = expand_border_pattern(pattern, size);
       resolve_border_colors_(side);
    }

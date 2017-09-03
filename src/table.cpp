@@ -94,7 +94,7 @@ Table::iterator Table::insert(iterator where) {
       return rows_.insert(where, Row(RowConfig(), false));
    }
 
-   std::size_t index = (std::size_t)(where - begin());   
+   std::size_t index = (std::size_t)(where - begin());
    if (index >= count) {
       index -= count;
       std::size_t modulo = config_.row_repeat_modulo;

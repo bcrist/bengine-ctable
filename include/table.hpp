@@ -41,7 +41,7 @@ public:
    void push_back_header();
    void push_back();
    void push_back(Row row);
-   
+
    TableConfig& config();
    const TableConfig& config() const;
 

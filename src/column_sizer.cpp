@@ -47,7 +47,7 @@ void ColumnSizer::set_widths(I32 total_width) {
       }
       ++internal_width;
    }
-   
+
    for (CellRenderer* ptr : cells_) {
       CellRenderer& cell = *ptr;
       I32 padding = cell.padding.left() + cell.padding.right();
