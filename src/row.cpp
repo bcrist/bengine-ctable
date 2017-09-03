@@ -167,6 +167,7 @@ Row operator<<(Row&& row, RowFunc func) {
 ///////////////////////////////////////////////////////////////////////////////
 /// \brief call push_back(); back() << *it for it in [other.begin(), other.end())
 Row& operator<<(Row& row, const Row& other) {
+   // TODO shouldn't this add a new row?
    row.reserve(row.size() + other.size());
    for (const Cell& cell : other) {
       row.push_back();

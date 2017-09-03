@@ -13,7 +13,7 @@ namespace detail {
 ///////////////////////////////////////////////////////////////////////////////
 template <typename Inner>
 class HSeqRenderer final : public BaseRenderer<HSeqRenderer<Inner>> {
-   friend class base;
+   friend class BaseRenderer<HSeqRenderer<Inner>>;
 public:
    using vec_type = std::vector<Inner*>;
 
@@ -51,7 +51,7 @@ private:
       for (auto ptr : inner_) {
          ptr->freeze();
       }
-      base::freeze_();
+      BaseRenderer<HSeqRenderer<Inner>>::freeze_();
    }
 
    void render_(std::ostream& os) {

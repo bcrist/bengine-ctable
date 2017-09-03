@@ -11,6 +11,7 @@ namespace detail {
 
 ///////////////////////////////////////////////////////////////////////////////
 class CellRenderer final : public BaseRenderer<CellRenderer> {
+   using base = BaseRenderer<CellRenderer>;
    friend class base;
 public:
    using text_renderer_type = TextRenderer;

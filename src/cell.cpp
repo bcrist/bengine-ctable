@@ -156,6 +156,8 @@ Cell& operator<<(Cell& cell, const Cell& other) {
    if (other.stream_status_ == Cell::stream_status::dirty) {
       cell.stream_ << other.stream_.rdbuf();
       cell.stream_.clear();
+      cell.fg_ = other.fg_;
+      cell.bg_ = other.bg_;
       cell.stream_status_ = Cell::stream_status::dirty;
    }
    

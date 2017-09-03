@@ -52,9 +52,8 @@ public:
    }
 
 protected:
-   using base = BaseRenderer<Derived>;
-
-   BaseRenderer() { }
+   BaseRenderer() = default;
+   ~BaseRenderer() = default;
 
    I32 width_() const { return 0; }
    I32 height_() const { return 0; }

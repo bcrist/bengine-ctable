@@ -13,7 +13,7 @@ namespace detail {
 ///////////////////////////////////////////////////////////////////////////////
 template <typename Inner>
 class VSeqRenderer final : public BaseRenderer<VSeqRenderer<Inner>> {
-   friend class base;
+   friend class BaseRenderer<VSeqRenderer<Inner>>;
 public:
    using vec_type = std::vector<Inner*>;
 
@@ -53,13 +53,13 @@ private:
       for (auto ptr : inner_) {
          ptr->freeze();
       }
-      base::freeze_();
+      BaseRenderer<VSeqRenderer<Inner>>::freeze_();
    }
 
    void render_(std::ostream& os) {
       for (;;) {
          if (index_ >= inner_.size()) {
-            render_blank_(os);
+            this->render_blank_(os);
             return;
          }
 
@@ -68,8 +68,8 @@ private:
          if (in) {
             in(os);
 
-            if (in.width() < width()) {
-               render_blank_(os, width() - in.width());
+            if (in.width() < this->width()) {
+               this->render_blank_(os, this->width() - in.width());
             }
             break;
          }

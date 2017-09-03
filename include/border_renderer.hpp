@@ -12,17 +12,17 @@ namespace detail {
 ///////////////////////////////////////////////////////////////////////////////
 template <typename Inner>
 class BorderRenderer final : public BaseRenderer<BorderRenderer<Inner>> {
-   friend class base;
+   friend class BaseRenderer<BorderRenderer<Inner>>;
 public:
    using vec_type = std::vector<BorderChar>;
 
    BorderRenderer(Inner& inner)
       : inner_(inner),
-        inside_line_(0),
         top_enabled_(false),
         right_enabled_(false),
         bottom_enabled_(false),
         left_enabled_(false),
+        inside_line_(0),
         fg_(LogColor::current),
         bg_(LogColor::current)
    { }
@@ -117,15 +117,15 @@ private:
 
    void freeze_() {
       inner_.freeze();
-      base::freeze_();
+      BaseRenderer<BorderRenderer<Inner>>::freeze_();
    }
 
    void render_(std::ostream& os) {
       auto base_color = get_color(os);
 
-      if (line_ == 0 && top_enabled_) {
+      if (this->line_ == 0 && top_enabled_) {
          render_rule_(os, top_);
-      } else if (line_ == height() - 1 && bottom_enabled_) {
+      } else if (this->line_ == this->height() - 1 && bottom_enabled_) {
          render_rule_(os, bottom_);
       } else {
          render_side_(os, left_);

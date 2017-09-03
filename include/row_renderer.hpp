@@ -14,6 +14,8 @@ class TableSizer;
 
 ///////////////////////////////////////////////////////////////////////////////
 class RowRenderer final : public BaseRenderer<RowRenderer> {
+   using base = BaseRenderer<RowRenderer>;
+
    friend class base;
    friend class RowSizer;
    friend class TableSizer;

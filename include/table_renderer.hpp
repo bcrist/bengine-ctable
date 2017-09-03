@@ -14,6 +14,7 @@ class TableSizer;
 
 ///////////////////////////////////////////////////////////////////////////////
 class TableRenderer final : public BaseRenderer<TableRenderer> {
+   using base = BaseRenderer<TableRenderer>;
    friend class base;
 public:
    using seq_renderer_type = VSeqRenderer<RowRenderer>;

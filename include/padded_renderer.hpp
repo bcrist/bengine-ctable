@@ -11,7 +11,7 @@ namespace detail {
 ///////////////////////////////////////////////////////////////////////////////
 template <typename Inner>
 class PaddedRenderer final : public BaseRenderer<PaddedRenderer<Inner>> {
-   friend class base;
+   friend class BaseRenderer<PaddedRenderer<Inner>>;
 public:
    using pad_type = U16;
 
@@ -56,27 +56,27 @@ private:
 
    void freeze_() {
       inner_.freeze();
-      base::freeze_();
+      BaseRenderer<PaddedRenderer<Inner>>::freeze_();
+   }
+
+   using BaseRenderer<PaddedRenderer<Inner>>::render_blank_;
+
+   void render_blank_(std::ostream& os, I32 w) {
+      os << setcolor(fg_, bg_) << S((size_t)w, ' ');
    }
 
    void render_(std::ostream& os) {
       auto base_color = get_color(os);
 
-      if (line_ < top_) {
-         render_blank_(os, width());
+      if (this->line_ < top_) {
+         this->render_blank_(os, this->width());
       } else {
-         render_blank_(os, left_);
+         this->render_blank_(os, left_);
          inner_(os);
-         render_blank_(os, right_);
+         this->render_blank_(os, right_);
       }
 
       os << base_color;
-   }
-
-   using base::render_blank_;
-
-   void render_blank_(std::ostream& os, I32 w) {
-      os << setcolor(fg_, bg_) << S((size_t)w, ' ');
    }
 
    Inner& inner_;

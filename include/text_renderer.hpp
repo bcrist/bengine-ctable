@@ -12,6 +12,7 @@ namespace detail {
 
 ///////////////////////////////////////////////////////////////////////////////
 class TextRenderer final : public BaseRenderer<TextRenderer> {
+   using base = BaseRenderer<TextRenderer>;
    friend class base;
 
    struct datum {
