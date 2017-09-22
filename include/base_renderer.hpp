@@ -2,7 +2,6 @@
 #ifndef BE_CTABLE_BASE_RENDERER_HPP_
 #define BE_CTABLE_BASE_RENDERER_HPP_
 
-#include "ctable_autolink.hpp"
 #include <be/core/be.hpp>
 #include <glm/vec2.hpp>
 #include <ostream>

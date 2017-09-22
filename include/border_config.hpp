@@ -2,7 +2,6 @@
 #ifndef BE_CTABLE_BORDER_CONFIG_HPP_
 #define BE_CTABLE_BORDER_CONFIG_HPP_
 
-#include "ctable_autolink.hpp"
 #include <be/core/console.hpp>
 #include <vector>
 

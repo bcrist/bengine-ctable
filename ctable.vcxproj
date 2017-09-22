@@ -55,7 +55,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\ctable.hpp" />
-    <ClInclude Include="include\ctable_autolink.hpp" />
     <ClInclude Include="include\base_renderer.hpp" />
     <ClInclude Include="include\border_config.hpp" />
     <ClInclude Include="include\border_renderer.hpp" />

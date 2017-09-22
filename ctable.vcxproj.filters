@@ -29,9 +29,6 @@
     <ClInclude Include="include\ctable.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\ctable_autolink.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\cell.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>

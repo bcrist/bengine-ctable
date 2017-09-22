@@ -41,6 +41,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Link>
+      <AdditionalDependencies>ctable-debug.lib;core-debug.lib;zlib-static-debug.lib;util-debug.lib;testing-debug.lib;core-id-with-names-debug.lib;Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Link>
+      <AdditionalDependencies>ctable.lib;core.lib;zlib-static.lib;util.lib;testing.lib;core-id-with-names.lib;Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="test\test_ct_border_config.cpp" />
     <ClCompile Include="test\test_main.cpp" />

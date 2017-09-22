@@ -11,6 +11,9 @@ module 'ctable' {
    },
    app '-test' {
       icon 'icon/bengine-test-perf.ico',
-      link_project 'testing'
+      link_project {
+         'ctable',
+         'testing'
+      }
    }
 }
